@@ -1,9 +1,17 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { NavBar, Footer, Services, Welcome, Transactions } from './components'
 
-function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+const App = () => {
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <NavBar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  )
 }
 
 export default App
